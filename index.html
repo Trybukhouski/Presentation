@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,155 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Hello, world!</h2>
+				</section>
+				<section>
+					<h2>Some questions about microfrontends</h2>
+					<p class="fragment" data-fragment-index="1">Do you need this technology?</p>
+					<p class="fragment" data-fragment-index="2">What are the advantages and disadvantages of this technology?</p>
+					<p class="fragment" data-fragment-index="3">Do you really need to implement this technology?</p>
+					<p class="fragment" data-fragment-index="4">And if necessary, how to use this technology?</p>
+				</section>
+				<section>
+					<h2>What is microfrontends?</h2>
+				</section>
+				<section>
+					<p>Microfrontend is the splitting of 
+						a monolithic application into semantically isolated parts 
+						and independent development of this parts.</p>
+				</section>
+				<section>
+					<h2>Is it difficult to understand?</h2>
+					<h3 class="fragment" data-fragment-index="1">Let's try an example!</h3>
+				</section>
+				<section> 
+					<h2>Example</h2>
+					<section>
+						<h3>Step 1</h3>
+						<p>We have an app or website.</p>
+					</section>
+					<section>
+						<h3>Step 2</h3>
+						<p>On each page we have different blocks:</p>
+							<ul>
+								<li>admin panel</li>
+								<li>catalog page</li>
+								<li>shopping cart</li>
+								<li>etc...</li>
+							</ul>
+					</section>
+					<section>
+						<h3>Step 3</h3>
+						<p>Each of these blocks can be considered as a microfrontend unit, 
+							and this unit that can be independently:</p>
+							<ul>
+								<li>developed</li>
+								<li>tested</li>
+								<li>deployed</li>
+							</ul>
+					</section>
+					<section>
+						<h3>Step 4</h3>
+						<p>At the same time, 
+							the blocks must be able to interact with each other, 
+							cause they are part of the same application</p>
+					</section>
+				</section>
+				<section>
+					<h2>Why was this technology created?</h2>
+				</section>
+				<section>
+					<p>
+						For a long time, 
+						the application was developed 
+						according to an architectural conception called "monolith".
+					</p>
+				</section>
+				<section>
+					<h2>Monolith had some disadvantages:</h2>
+					<p class="fragment" data-fragment-index="1">difficult to scale</p>
+					<p class="fragment" data-fragment-index="2">difficult to develop</p>
+					<p class="fragment" data-fragment-index="3">difficult to maintain</p>
+					<p class="fragment" data-fragment-index="4">difficult to test</p>
+				</section>
+				<section>
+					<h2>Microfronends advantages:</h2>
+					<p class="fragment" data-fragment-index="1">
+						Solves the problems of monolithic architecture
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Independent development teams can work on different parts of the project
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						You can use different frameworks in different microfrontend units
+					</p>
+				</section>
+				<section>
+					<h2>It looks like microservices!</h2>
+					<p class="fragment" data-fragment-index="1">
+						This is true, but only partially
+					</p>
+				</section>
+				<section>
+					<h3>Microfrontends 
+						<br>!== 
+						<br>Microservices</h3>
+					<h4 class="fragment" data-fragment-index="1">In frontend wa have:</h4>
+					<p class="fragment" data-fragment-index="2">
+						Single address bar
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						Single DOM-tree
+					</p>
+					<p class="fragment" data-fragment-index="5">
+						=> In microfrontends it is impossible to achieve complete isolation of the parts.
+					</p>
+				</section>
+				<section>
+					<h2>How to create microfontend</h2>
+					<section>
+						<h3>Step 1</h3>
+						<p>Separation of functionality</p>
+					</section>
+					<section>
+						<h3>Step 2</h3>
+						<p>Creating interfaces</p>
+					</section>
+					<section>
+						<h3>Step 3</h3>
+						<p>Integration into a common application</p>
+					</section>
+					<section>
+						<h3>Step 4</h3>
+						<p>Testing of the embedded micro-frontend</p>
+					</section>
+				</section>
+				<section>
+					<h2>What about disadvantages of this technology?</h2>
+				</section>
+				<section>
+					<p>This technology has no drawbacks, but there are nuances of use</з>
+				</section>
+				<section>
+					<h2>Nuances</h2>
+					<p class="fragment" data-fragment-index="1">
+						High-quality code architecture
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						A large number of tests
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Knowledge of additional technologies
+					</p>
+				</section>
+				<section>
+					<h2>Use microfrontends only if your project is really big!</h2>
+				</section>
+				<section>
+					<h2>Thanks for watching!</h2>
+					<p>Lector: Ruslan Trybukhouski</p>
+				</section>
 			</div>
 		</div>
 
